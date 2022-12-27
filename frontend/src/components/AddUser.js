@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AddUser = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("Male");
-  const navigate = useHistory();
+  const navigate = useNavigate();
 
   const saveUser = async (e) => {
     e.preventDefault();
